@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess the Flag</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styleproject.css" />
+    </head>
+    <body>
+        <div id = "formatscore">
+            <h4 id = "score">score : 0</h4>
+        </div>
+        <h1 id = "title">Guess the flag..</h1>
+        <div id="image">
+            <img class = "image_resize" src="https://cdn.britannica.com/79/4479-050-6EF87027/flag-Stars-and-Stripes-May-1-1795.jpg">
+        </div>
+        <div id = "choices">
+            <div class = "choice" id="correct-button">
+                <p>America</p>
+            </div>
+            <div class = "choice" id="wrong-button">
+                <p>Finland</p>
+            </div>
+            <div class = "choice" id="wrong-button">
+                <p>Thailand</p>
+            </div>
+            <div class = "choice" id="wrong-button">
+                <p>Singapore</p>
+            </div>
+        </div>
+        <div id="popupanswer" class="popupanswer">
+            <div id = "textshow" class="popupanswer-content">
+                
+            </div>
+        </div>
+        <div id="popupuser" class="popupuser">
+            <div class="popupuser-content">
+                <h2>Please enter your name</h2>
+                <input type="text" name = "name" id="input"/>
+                <div id="okbutton"><p>Start</p></div>
+            </div>
+        </div>
+        <div id="popup" class="popup">
+            <span class="close" id="closePopup">
+                <h4>Retry</h4>
+            </span>
+            <div class="popup-content">
+                <h2>LeaderBoard</h2>
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="main-table-body">
+                        <tr>
+                            <td>1</td>
+                            <td>Player 1</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Player 2</td>
+                            <td>800</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Player 3</td>
+                            <td>600</td>
+                        </tr>
+                    </tbody>
+                </table>    
+                
+            </div>
+        </div>
+        <script type="module" src="scripts/main.js"></script>
+    </body>
+</html>
